@@ -17,4 +17,4 @@ while(a < 720):
 	request = requests.get(second_url)
 	validating()
 	a+=1
-print colored('Sorry, we couldn\'t get the admin panel login\'s panel url', 'red')
+print colored('Sorry, we couldn\'t get the admin panel url', 'red')
