@@ -1,7 +1,6 @@
-#! /usr/bin/python
+#!/usr/bin/python
 
 import requests
-from termcolor import colored
 
 
 url = raw_input('Enter the URL to Test, Ex. http://www.example.com: ')
@@ -9,10 +8,10 @@ cPannel_list = ['/admin/','/administrator/','/admin1/','/administration/','/phpM
 
 def validating(req):
 	if req.status_code == 200:
-		print colored('[+] cPanel found!: {0}{1}'.format(url, admin_url), 'green')
+		print('[+] cPanel found!: {0}{1}'.format(url, admin_url))
 		quit()
 	else:
-		print'[-] {0}{1} is not the cPanel.'.format(url, admin_url)
+		print('[-] {0}{1} is not the cPanel.'.format(url, admin_url))
 
 for i in range(0,720):
 	admin_url=cPannel_list[i]
@@ -20,4 +19,4 @@ for i in range(0,720):
 	request = requests.get(second_url)
 	validating(request)
 
-print colored('[-] Directory Could Not Be Found', 'red')
+print('[-] Directory Could Not Be Found')
