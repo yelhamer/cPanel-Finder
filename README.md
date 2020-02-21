@@ -8,7 +8,7 @@ A security-auditing script that attempts to find the control panel of the websit
 ```Shell
 pip3 install termcolor
 ```
-or
+Or
 ```Shell
 sudo apt install python3-termcolor
 ```
