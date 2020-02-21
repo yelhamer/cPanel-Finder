@@ -6,5 +6,9 @@ A security-auditing script that attempts to find the control panel of the websit
 
 # Installing Dependencies
 ```Shell
+pip3 install termcolor
+```
+or
+```Shell
 sudo apt install python3-termcolor
 ```
